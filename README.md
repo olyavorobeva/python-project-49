@@ -3,4 +3,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/c5be20bbe33e755776f4/maintainability)](https://codeclimate.com/github/olyavorobeva/python-project-49/maintainability)
 
 
-[Demo](https://asciinema.org/a/551628)
+[Demo brain-even](https://asciinema.org/a/551628)
+
+[Demo brain-calc](https://asciinema.org/a/eeizYaGRUYwDuGgT1iIdtrKvV)
