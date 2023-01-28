@@ -1,4 +1,4 @@
-from games.brain_even import even_game
+from brain_games.games.brain_even import even_game
 
 
 if __name__ == '__main__':
