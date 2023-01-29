@@ -3,7 +3,7 @@ install:
 brain-games:
 	poetry run brain-games
 build:
-	poetry build
+	rm -rf dist && poetry build
 publish:
 	poetry publish --dry-run
 package-install:
@@ -14,3 +14,5 @@ brain-even:
 	poetry run brain-even
 brain-calc:
 	poetry run brain-calc
+brain-gcd:
+	poetry run brain-gcd
