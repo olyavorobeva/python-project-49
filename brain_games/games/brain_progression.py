@@ -9,12 +9,13 @@ def brain_progression():
     print(f'Hello, {name}!')
     print('What number is missing in the progression?')
     for i in range(3):
+        length_of_ls = 10
         step = randint(1, 3)
-        index_of_the_missing_number = randint(0, 9)
         start = randint(1, 100)
         ls = []
-        for i in range(start, start+(10*step), step):
+        for i in range(start, start+(length_of_ls*step), step):
             ls.append(i)
+        index_of_the_missing_number = randint(0, len(ls)-1)
         missing_number = ls[index_of_the_missing_number]
         ls[index_of_the_missing_number] = '..'
         print(f'Question: {" ".join([str(x) for x in ls])}')
