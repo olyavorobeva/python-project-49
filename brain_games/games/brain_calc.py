@@ -1,42 +1,32 @@
 from random import randint, choice
+from brain_games.games.greeting import greeting
+from brain_games.games.game_logic import logic
+
+
+def calculate(a, b, operator):
+    if operator == '+':
+        return a + b
+    elif operator == '-':
+        return a - b
+    elif operator == '*':
+        return a * b
+
+
+def one_round():
+    operators = ['+', '*', '-']
+    a = randint(1, 19)
+    b = randint(1, 19)
+    operator = choice(operators)
+    print(f'Question: {a} {operator} {b}')
+    p = int(input('Your answer:'))
+    answer = calculate(a, b, operator)
+    if p == answer:
+        return True, answer, p
+    else:
+        return False, answer, p
 
 
 def brain_calc():
-    correct_answers = 0
-    operators = ['+', '*', '-']
-    print('Welcome to the Brain Games!')
-    name = input('May I have your name?')
-    print(f'Hello, {name}')
+    name = greeting()
     print('What is the result of the expression?')
-    for i in range(3):
-        a = randint(1, 19)
-        b = randint(1, 19)
-        operator = choice(operators)
-        print(f'Question: {a} {operator} {b}')
-        p = int(input('Your answer:'))
-        if operator == '+':
-            if p == a + b:
-                print('Correct!')
-                correct_answers += 1
-            else:
-                print(f'\'{p}\' is a wrong answer ;(. Correct answer was \'{a + b}\'.')
-                print(f'Let\'s try again, {name}!')
-                break
-        elif operator == '-':
-            if p == a - b:
-                print('Correct!')
-                correct_answers += 1
-            else:
-                print(f'\'{p}\' is a wrong answer ;(. Correct answer was \'{a - b}\'.')
-                print(f'Let\'s try again, {name}!')
-                break
-        elif operator == '*':
-            if p == a * b:
-                print('Correct!')
-                correct_answers += 1
-            else:
-                print(f'\'{p}\' is a wrong answer ;(. Correct answer was \'{a * b}\'.')
-                print(f'Let\'s try again, {name}!')
-                break
-    if correct_answers == 3:
-        print(f'Congratulations, {name}!')
+    logic(one_round, name)
