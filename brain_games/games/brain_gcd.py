@@ -10,10 +10,7 @@ def one_round():
     print(f'Question: {a} {b}')
     p = int(input('Your answer:'))
     gcd = math.gcd(a, b)
-    if p == gcd:
-        return True, gcd, p
-    else:
-        return False, gcd, p
+    return gcd, p
 
 
 def brain_gcd():

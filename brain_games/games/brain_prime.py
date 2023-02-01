@@ -19,10 +19,7 @@ def one_round():
     print(f'Question: {digit}')
     p = input('Your answer:')
     is_prime = 'yes' if check_prime(digit) else 'no'
-    if p == is_prime:
-        return True, is_prime, p
-    else:
-        return False, is_prime, p
+    return is_prime, p
 
 
 def brain_prime():

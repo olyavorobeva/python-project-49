@@ -15,10 +15,7 @@ def one_round():
     ls[index_of_the_missing_number] = '..'
     print(f'Question: {" ".join([str(x) for x in ls])}')
     p = int(input('Your answer:'))
-    if p == missing_number:
-        return True, missing_number, p
-    else:
-        return False, missing_number, p
+    return missing_number, p
 
 
 def brain_progression():

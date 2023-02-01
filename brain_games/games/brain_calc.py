@@ -20,10 +20,7 @@ def one_round():
     print(f'Question: {a} {operator} {b}')
     p = int(input('Your answer:'))
     answer = calculate(a, b, operator)
-    if p == answer:
-        return True, answer, p
-    else:
-        return False, answer, p
+    return answer, p
 
 
 def brain_calc():

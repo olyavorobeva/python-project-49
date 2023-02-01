@@ -1,8 +1,9 @@
 def logic(f, name):
     correct_answers = 0
-    for i in range(3):
-        round, answer, p = f()
-        if round:
+    ROUNDS = 3
+    for _ in range(ROUNDS):
+        answer, p = f()
+        if answer == p:
             print('Correct!')
             correct_answers += 1
         else:

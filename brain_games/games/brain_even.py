@@ -8,10 +8,7 @@ def one_round():
     print(f'Question: {a}')
     p = input('Your answer:')
     answer = 'yes' if a % 2 == 0 else 'no'
-    if p == answer:
-        return True, answer, p
-    else:
-        return False, answer, p
+    return answer, p
 
 
 def even_game():
