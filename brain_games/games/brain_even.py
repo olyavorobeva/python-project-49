@@ -16,5 +16,5 @@ def one_round():
 
 def even_game():
     name = greeting()
-    print('Answer "yes" if number is even, otherwise answer "no".')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     logic(one_round, name)
