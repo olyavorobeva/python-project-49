@@ -18,8 +18,7 @@ def one_round():
     digit = randint(1, 100)
     print(f'Question: {digit}')
     p = input('Your answer:')
-    is_prime = check_prime(digit)
-    is_prime = 'yes' if is_prime else 'no'
+    is_prime = 'yes' if check_prime(digit) else 'no'
     if p == is_prime:
         return True, is_prime, p
     else:
