@@ -1,9 +1,14 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.6"
-description = ""
-authors = ["Olga Vorobeva <ms.olya_v>"]
+description = "Collection of 6 different games"
+classifiers = [
+"Topic :: Education :: Testing",
+"Topic :: Games/Entertainment"
+]
+authors = ["Olga Vorobeva <ms.olya_v@mail.ru>"]
 readme = "README.md"
+repository = "https://github.com/olyavorobeva/python-project-49"
 packages = [{include = "brain_games"},
 ]
 
