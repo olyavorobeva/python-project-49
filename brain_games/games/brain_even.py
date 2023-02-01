@@ -7,7 +7,7 @@ def one_round():
     a = randint(1, 100)
     print(f'Question: {a}')
     p = input('Your answer:')
-    answer = 'yes' if p % 2 == 0 else 'no'
+    answer = 'yes' if a % 2 == 0 else 'no'
     if p == answer:
         return True, answer, p
     else:
