@@ -1,8 +1,14 @@
-def logic(f, name):
+from brain_games.games.greeting import greeting
+
+
+
+def logic(module):
+    name = greeting()
     correct_answers = 0
+    print(module.RULES)
     ROUNDS = 3
     for _ in range(ROUNDS):
-        answer, p = f()
+        answer, p = module.one_round()
         if answer == p:
             print('Correct!')
             correct_answers += 1
