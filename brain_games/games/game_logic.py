@@ -10,5 +10,5 @@ def logic(f, name):
             print(f"'{p}' is a wrong answer ;(. Correct answer was '{answer}'.")
             print(f'Let\'s try again, {name}!')
             break
-    if correct_answers == 3:
+    if correct_answers == ROUNDS:
         print(f'Congratulations, {name}!')

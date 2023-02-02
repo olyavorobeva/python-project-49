@@ -3,6 +3,10 @@ from brain_games.games.greeting import greeting
 from brain_games.games.game_logic import logic
 
 
+MIN = 1
+MAX = 19
+
+
 def calculate(a, b, operator):
     if operator == '+':
         return a + b
@@ -14,8 +18,8 @@ def calculate(a, b, operator):
 
 def one_round():
     operators = ['+', '*', '-']
-    a = randint(1, 19)
-    b = randint(1, 19)
+    a = randint(MIN, MAX)
+    b = randint(MIN, MAX)
     operator = choice(operators)
     print(f'Question: {a} {operator} {b}')
     p = int(input('Your answer:'))

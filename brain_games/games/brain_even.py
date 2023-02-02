@@ -3,8 +3,12 @@ from brain_games.games.greeting import greeting
 from brain_games.games.game_logic import logic
 
 
+MIN = 1
+MAX = 100
+
+
 def one_round():
-    a = randint(1, 100)
+    a = randint(MIN, MAX)
     print(f'Question: {a}')
     p = input('Your answer:')
     answer = 'yes' if a % 2 == 0 else 'no'

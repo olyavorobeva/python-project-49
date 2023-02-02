@@ -4,6 +4,10 @@ from brain_games.games.greeting import greeting
 from brain_games.games.game_logic import logic
 
 
+MIN = 1
+MAX = 100
+
+
 def check_prime(a):
     prime = True
     j = 2
@@ -15,7 +19,7 @@ def check_prime(a):
 
 
 def one_round():
-    digit = randint(1, 100)
+    digit = randint(MIN, MAX)
     print(f'Question: {digit}')
     p = input('Your answer:')
     is_prime = 'yes' if check_prime(digit) else 'no'
