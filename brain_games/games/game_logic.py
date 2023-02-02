@@ -1,7 +1,6 @@
 from brain_games.games.greeting import greeting
 
 
-
 def logic(module):
     name = greeting()
     correct_answers = 0

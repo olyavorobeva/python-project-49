@@ -23,4 +23,4 @@ def one_round():
     print(f'Question: {a} {operator} {b}')
     p = int(input('Your answer:'))
     answer = calculate(a, b, operator)
-    return answer, p    
+    return answer, p

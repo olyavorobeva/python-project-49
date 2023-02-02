@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
-from brain_games.games.brain_prime import brain_prime
+from brain_games.games import brain_prime
+from brain_games.games.game_logic import logic
 
 
-if __name__ == '__main__':
-    brain_prime()
+def run():
+    logic(brain_prime)

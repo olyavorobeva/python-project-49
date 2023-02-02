@@ -1,11 +1,10 @@
 from random import randint
 import math
-from brain_games.games.greeting import greeting
-from brain_games.games.game_logic import logic
 
 
 MIN = 1
 MAX = 100
+RULES = 'Find the greatest common divisor of given numbers.'
 
 
 def one_round():
@@ -15,9 +14,3 @@ def one_round():
     p = int(input('Your answer:'))
     gcd = math.gcd(a, b)
     return gcd, p
-
-
-def brain_gcd():
-    name = greeting()
-    print('Find the greatest common divisor of given numbers.')
-    logic(one_round, name)
