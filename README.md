@@ -37,7 +37,15 @@
 ```
 ## Демо игр
 [Demo brain-even](https://asciinema.org/a/551628)
+
+
 [Demo brain-calc](https://asciinema.org/a/eeizYaGRUYwDuGgT1iIdtrKvV)
+
+
 [Demo brain-gcd](https://asciinema.org/a/dtWsqZ7BZy0KH41EIVbJnXwFJ)
+
+
 [Demo brain-progression](https://asciinema.org/a/fdoRmzSK3fJZMcLI3GaLg9B6l)
+
+
 [Demo brain-prime](https://asciinema.org/a/556206)
