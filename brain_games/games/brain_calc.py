@@ -1,10 +1,9 @@
 from random import randint, choice
-from brain_games.games.greeting import greeting
-from brain_games.games.game_logic import logic
 
 
 MIN = 1
 MAX = 19
+RULES = 'What is the result of the expression?'
 
 
 def calculate(a, b, operator):
@@ -25,9 +24,3 @@ def one_round():
     p = int(input('Your answer:'))
     answer = calculate(a, b, operator)
     return answer, p
-
-
-def brain_calc():
-    name = greeting()
-    print('What is the result of the expression?')
-    logic(one_round, name)

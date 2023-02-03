@@ -1,11 +1,10 @@
 from random import randint
 from math import sqrt
-from brain_games.games.greeting import greeting
-from brain_games.games.game_logic import logic
 
 
 MIN = 1
 MAX = 100
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def check_prime(a):
@@ -24,9 +23,3 @@ def one_round():
     p = input('Your answer:')
     is_prime = 'yes' if check_prime(digit) else 'no'
     return is_prime, p
-
-
-def brain_prime():
-    name = greeting()
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    logic(one_round, name)

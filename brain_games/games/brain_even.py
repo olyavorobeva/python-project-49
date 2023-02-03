@@ -1,10 +1,9 @@
 from random import randint
-from brain_games.games.greeting import greeting
-from brain_games.games.game_logic import logic
 
 
 MIN = 1
 MAX = 100
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def one_round():
@@ -13,9 +12,3 @@ def one_round():
     p = input('Your answer:')
     answer = 'yes' if a % 2 == 0 else 'no'
     return answer, p
-
-
-def even_game():
-    name = greeting()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    logic(one_round, name)
