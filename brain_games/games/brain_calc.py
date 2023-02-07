@@ -6,21 +6,21 @@ MAX = 19
 RULES = 'What is the result of the expression?'
 
 
-def calculate(a, b, operator):
+def calculate(first_number, second_number, operator):
     if operator == '+':
-        return a + b
+        return first_number + second_number
     elif operator == '-':
-        return a - b
+        return first_number - second_number
     elif operator == '*':
-        return a * b
+        return first_number * second_number
 
 
-def one_round():
+def execute_one_round():
     operators = ['+', '*', '-']
-    a = randint(MIN, MAX)
-    b = randint(MIN, MAX)
+    first_number = randint(MIN, MAX)
+    second_number = randint(MIN, MAX)
     operator = choice(operators)
-    print(f'Question: {a} {operator} {b}')
-    p = int(input('Your answer:'))
-    answer = calculate(a, b, operator)
-    return answer, p
+    print(f'Question: {first_number} {operator} {second_number}')
+    response = int(input('Your answer:'))
+    answer = calculate(first_number, second_number, operator)
+    return answer, response

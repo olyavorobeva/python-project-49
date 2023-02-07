@@ -17,9 +17,9 @@ def check_prime(a):
     return prime
 
 
-def one_round():
+def execute_one_round():
     digit = randint(MIN, MAX)
     print(f'Question: {digit}')
-    p = input('Your answer:')
+    response = input('Your answer:')
     is_prime = 'yes' if check_prime(digit) else 'no'
-    return is_prime, p
+    return is_prime, response

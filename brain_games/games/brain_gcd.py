@@ -7,10 +7,10 @@ MAX = 100
 RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def one_round():
-    a = randint(MIN, MAX)
-    b = randint(MIN, MAX)
-    print(f'Question: {a} {b}')
-    p = int(input('Your answer:'))
-    gcd = math.gcd(a, b)
-    return gcd, p
+def execute_one_round():
+    start = randint(MIN, MAX)
+    finish = randint(MIN, MAX)
+    print(f'Question: {start} {finish}')
+    response = int(input('Your answer:'))
+    gcd = math.gcd(start, finish)
+    return gcd, response
