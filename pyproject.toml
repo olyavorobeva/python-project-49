@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.7"
+version = "0.1.8"
 description = "Collection of 6 different games"
 classifiers = [
 "Topic :: Education :: Testing",
