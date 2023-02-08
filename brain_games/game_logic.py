@@ -13,7 +13,7 @@ def execute_main_logic(module):
             correct_answers += 1
         else:
             print(f"'{response}' is a wrong answer ;(.", end='')
-            print("Correct answer was '{answer}'.")
+            print(f"Correct answer was '{answer}'.")
             print(f'Let\'s try again, {name}!')
             break
     if correct_answers == ROUNDS:
