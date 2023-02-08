@@ -6,14 +6,14 @@ MAX_STEP = 3
 MIN_PROGRESSION = 1
 MAX_PROGRESSION = 100
 RULES = 'What number is missing in the progression?'
-LENGTH_OF_PROGRESSION = 10
+LENGTH = 10
 
 
 def make_progression():
     step = randint(MIN_STEP, MAX_STEP)
     progression = randint(MIN_PROGRESSION, MAX_PROGRESSION)
     ls = []
-    for i in range(progression, progression + (LENGTH_OF_PROGRESSION * step), step):
+    for i in range(progression, progression + (LENGTH * step), step):
         ls.append(i)
     return ls
 
