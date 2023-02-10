@@ -20,7 +20,6 @@ def execute_one_round():
     first_number = randint(MIN, MAX)
     second_number = randint(MIN, MAX)
     operator = choice(operators)
-    print(f'Question: {first_number} {operator} {second_number}')
-    response = int(input('Your answer:'))
+    question = f'{first_number} {operator} {second_number}'
     answer = calculate(first_number, second_number, operator)
-    return answer, response
+    return str(answer), question

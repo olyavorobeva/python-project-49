@@ -28,6 +28,5 @@ def delete_random_number_in_progression(ls):
 def execute_one_round():
     ls = make_progression()
     missing_number = delete_random_number_in_progression(ls)
-    print(f'Question: {" ".join([str(x) for x in ls])}')
-    response = int(input('Your answer:'))
-    return missing_number, response
+    question = " ".join([str(x) for x in ls])
+    return str(missing_number), question

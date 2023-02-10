@@ -7,7 +7,9 @@ def execute_main_logic(module):
     print(module.RULES)
     ROUNDS = 3
     for _ in range(ROUNDS):
-        answer, response = module.execute_one_round()
+        answer, question = module.execute_one_round()
+        print(f'Question: {question}')
+        response = input('Your answer:')
         if answer == response:
             print('Correct!')
             correct_answers += 1
