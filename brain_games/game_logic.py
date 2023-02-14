@@ -1,4 +1,8 @@
-from brain_games.games.greeting import greeting
+def greeting():
+    print('Welcome to the Brain Games!')
+    name = input('May I have your name?')
+    print(f'Hello, {name}!')
+    return name
 
 
 def execute_main_logic(module):
